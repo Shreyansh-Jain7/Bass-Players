@@ -1,0 +1,60 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+
+  "basspro": [
+    {
+      "id":1,
+      "image" : "https://assets.basspro.com/image/list/fn_select:jq:first(.%5B%5D%7Cselect(.public_id%20%7C%20endswith(%22main%22)))/2610680.json?$Prod_PLPThumb$",
+      "name" : "Shimano Curado DC Baitcast Reel",
+      "brand" : "Shimano",
+      "type" : "Baitcast Reel",
+      "price" : "$269.99"
+    },
+    {
+      "id":2,
+      "image" : "https://assets.basspro.com/image/list/fn_select:jq:first(.%5B%5D%7Cselect(.public_id%20%7C%20endswith(%22main%22)))/2610680.json?$Prod_PLPThumb$",
+      "name" : "Shimano Curado DC Baitcast Reel",
+      "brand" : "Shimano",
+      "type" : "Baitcast Reel",
+      "price" : "$269.99"
+    },
+    {
+      "id":3,
+      "image" : "https://assets.basspro.com/image/list/fn_select:jq:first(.%5B%5D%7Cselect(.public_id%20%7C%20endswith(%22main%22)))/2610680.json?$Prod_PLPThumb$",
+      "name" : "Shimano Curado DC Baitcast Reel",
+      "brand" : "Shimano",
+      "type" : "Baitcast Reel",
+      "price" : "$269.99"
+    },
+    {
+      "id":4,
+      "image" : "https://assets.basspro.com/image/list/fn_select:jq:first(.%5B%5D%7Cselect(.public_id%20%7C%20endswith(%22main%22)))/2610680.json?$Prod_PLPThumb$",
+      "name" : "Shimano Curado DC Baitcast Reel",
+      "brand" : "Shimano",
+      "type" : "Baitcast Reel",
+      "price" : "$269.99"
+    },
+    {
+      "id":5,
+      "image" : "https://assets.basspro.com/image/list/fn_select:jq:first(.%5B%5D%7Cselect(.public_id%20%7C%20endswith(%22main%22)))/2610680.json?$Prod_PLPThumb$",
+      "name" : "Shimano Curado DC Baitcast Reel",
+      "brand" : "Shimano",
+      "type" : "Baitcast Reel",
+      "price" : "$269.99"
+    }
+
+  ]
+}
