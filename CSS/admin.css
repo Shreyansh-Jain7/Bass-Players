@@ -1,0 +1,181 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#logoimg{
+    width: 120px;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+#nav{
+    width:100%;
+    margin: auto;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    border-bottom: 1px solid rgb(107, 142, 172);
+}
+#note{
+    background-color: white;
+    width:22%;
+    justify-content: space-between;
+    display: flex ;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#welNote{
+    margin-left: 20px;
+}
+#logout{
+    width: 21%;
+    height: 30px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+#logout:hover{
+    background-color: rgb(38, 189, 38);
+    border: none;
+}
+#admindetails{
+    border: 1px dotted grey;
+    width: 20%;
+    text-align: center;
+}
+
+
+
+
+.sidenav {
+    height: 500px;
+    width: 16%;
+    /* position: fixed; */
+    /* z-index: 1; */
+    /* top: 0;
+    left: 0; */
+    background-color: aliceblue;
+    /* overflow-x: hidden; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #000000;
+    font-weight: bold;
+  }
+  .dropdown-btn{
+   margin: auto;
+   line-height: 60px;
+   }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: rgb(84, 206, 84);
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    height: 80px;
+    background-color: rgb(159, 201, 237);
+    padding-left: 8px; 
+    padding-top:1px;
+    padding-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+  }
+#largebox{
+  display: flex;
+}
+
+#product-container{
+  width: 70%;
+  padding-left: 10px;
+  border: 1px solid black;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding-right: 10px;
+}
+
+#productsetting{
+  width: 18%;
+  padding-left: 5px;
+}
+#fetchButton{
+  width:80% ;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 40px;
+  background-color: brown;
+  color: azure;
+  border:none;
+}
+#fetchButton:hover{
+  background-color: azure;
+  color: brown;
+  border: 1px solid black;
+  font-weight: bold
+}
+#productsetting input{
+  width: 90%;
+  height: 30px;
+  margin-bottom: 10px
+}
+#addproducts{
+  border: 1px solid black;
+  text-align: center;
+  font-size: 25px;
+}
+#addproducts button{
+  width: 40%;
+  height: 30px;
+  background-color: #cbc6c6;
+  margin-bottom: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#products{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:10px;
+  
+}
+#products>div{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  text-align: center;
+  line-height: 15px;
+}
+#products img{
+  width:150px;
+}
+
+

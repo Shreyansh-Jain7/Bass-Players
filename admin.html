@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./CSS/admin.css">
+</head>
+<body>
+
+<!---------------NAVBAR---------------->
+
+<div id="nav">
+    <img id="logoimg" src="./images/AdminLogo.png" alt="">
+    <h1>Admin Dashboard</h1>
+    <div id="note">
+        <p id="welNote">Hey! Admin Welcome Back</p>
+        <button id="logout">Log Out</button>
+    </div> 
+</div>
+
+<!---------------Admin List------------->
+
+<div id="largebox">
+
+    <div class="sidenav">
+        
+        <button class="dropdown-btn">Ritesh Kamte (IA)</button>
+            <div class="dropdown-container" style="padding-bottom: 0px;">
+            <h3>Role : Team Manager</h3>
+            </div>
+        
+        <button class="dropdown-btn">Shreyansh</button>
+            <div class="dropdown-container">
+               <h3>Role : Team Lead</h3>
+                <h3>Student Code : fw23_0000</h3>
+            </div>
+          
+          <button class="dropdown-btn">Dharamveer</button>
+            <div class="dropdown-container">
+                <h3>Role : Team Member</h3>
+                <h3>Student Code : fw23_0728</h3>
+            </div>
+          
+          <button class="dropdown-btn">Manshi Kumari</button>
+            <div class="dropdown-container">
+                <h3>Role : Team Member</h3>
+                <h3>Student Code : fw23_xxxx</h3>
+            </div>
+          
+          <button class="dropdown-btn">Mayank Arya</button>
+            <div class="dropdown-container">
+                <h3>Role : Team Member</h3>
+                <h3>Student Code : fw23_xxxx</h3>
+            </div>
+          
+          <button class="dropdown-btn">Akash</button>
+            <div class="dropdown-container">
+                <h3>Role : Team Member</h3>
+                <h3>Student Code : fw23_xxxx</h3>
+            </div>
+    </div>
+      
+    <div id="product-container">
+        <h2>Products:-</h2><hr>
+       <div id="products"></div>
+    </div>
+
+    <div id="productsetting">
+        <button id="fetchButton">Fetch All Products</Button>
+        <div id="addproducts">
+        <p>Add Product:-</p>
+        <input type="text" value="" placeholder="Name">
+        <input type="link" value="" placeholder="Image URL">
+        <input type="text" value="" placeholder="Brand">
+        <input type="text" value="" placeholder="Type">
+        <input type="text" value="" placeholder="Price">
+        <button id="submit">ADD</button>
+        </div><hr>
+
+        <div id="addproducts">
+            <p>Update Product:-</p>
+            <input type="number" value="" placeholder="ID">
+            <input type="text" value="" placeholder="Name">
+            <input type="link" value="" placeholder="Image URL">
+            <input type="text" value="" placeholder="Brand">
+            <input type="text" value="" placeholder="Type">
+            <input type="text" value="" placeholder="Price">
+            <button id="submit">UPDATE</button>
+        </div><hr>
+
+        <div id="addproducts">
+            <p>Delete Product:-</p>
+            <input type="number" value="" placeholder="ID">
+            <button id="submit">DELETE</button>
+        </div>
+
+    </div>
+</div>
+</body>
+<script src="./scripts/admin.js"></script>
+</html>
