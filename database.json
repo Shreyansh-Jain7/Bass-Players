@@ -21,7 +21,8 @@
       "name" : "Shimano Curado DC Baitcast Reel",
       "brand" : "Shimano",
       "type" : "Baitcast Reel",
-      "price" : "$269.99"
+      "price" : "$269.99",
+      "description" : "lor"
     },
     {
       "id":2,
