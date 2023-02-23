@@ -24,7 +24,7 @@ let container = document.querySelector("#products")
 
 async function fetchProducts(){
   try{
-    let res = await fetch(`${baseServerUrl}/basspro`,{
+    let res = await fetch(`${baseServerUrl}/baitcastreels`,{
             method : 'GET',
             headers : {
               "Content-type": "application/json",
