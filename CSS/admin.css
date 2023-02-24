@@ -179,4 +179,8 @@ body{
   height:180px;
 }
 
-
+#select{
+  width: 92%;
+  height: 38px;
+  margin-bottom: 10px
+}
