@@ -2,9 +2,7 @@ body{
     background:url("./images/c.avif") 
      no-repeat center center fixed;
      background-size: cover;
-  
-  }
-  
+
   .form-container {
     display: flex;
     flex-direction: column;
@@ -79,4 +77,4 @@ body{
   button[type="submit"]:hover {
     background-color: #3e8e41;
   }
-  
+
