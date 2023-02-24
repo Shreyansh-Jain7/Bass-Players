@@ -556,7 +556,7 @@ function sortRating(){
 
 // displayProducts(fetchedData);
 
-const baseServerUrl =   "http://localhost:3000";
+const baseServerUrl =   "https://dysfunctional-stomach-1310.onrender.com";
 
 async function fetchProducts(){
     try{
@@ -619,9 +619,9 @@ function displayProducts(data){
 
         card.addEventListener("click",()=>{
             localStorage.setItem("product",JSON.stringify(element));
-            window.location.href="./product.html";
+            window.location.href="../dysfunctional-stomach-1310/Product-info.html";
         })
         count++;
     })
-    // document.querySelector("#total").innerText=count;
+    document.querySelector("#total").innerText=count;
 }
