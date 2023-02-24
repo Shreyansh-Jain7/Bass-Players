@@ -16,15 +16,15 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 
-let fetchButton = document.querySelector("#fetchButton")
+let fetchButton1 = document.querySelector(".fetch1")
 
-
-
-let container = document.querySelector("#products")
+fetchButton1.addEventListener("click",function(e){
+  e.preventDefault()
+  let container = document.querySelector("#products")
 
 async function fetchProducts(){
   try{
-    let res = await fetch(`${baseServerUrl}/basspro`,{
+    let res = await fetch(`${baseServerUrl}/baitcastreels`,{
             method : 'GET',
             headers : {
               "Content-type": "application/json",
@@ -66,4 +66,61 @@ function displayData(data){
     container.append(card)
   });
 }
+})
+
+
+let fetchButton2 = document.querySelector(".fetch2")
+
+fetchButton2.addEventListener("click",function(e){
+  e.preventDefault()
+  let container = document.querySelector("#products")
+
+async function fetchProducts(){
+  try{
+    let res = await fetch(`${baseServerUrl}/sonar`,{
+            method : 'GET',
+            headers : {
+              "Content-type": "application/json",
+            }
+    })
+    let data = await res.json()
+    console.log(data)
+    displayData(data)
+
+  }catch(error){
+    return error
+  }
+
+}
+fetchProducts()
+
+
+function displayData(data){
+  container.innerHTML = null;
+
+  data.forEach(el => {
+
+    let card = document.createElement("div")
+    let img = document.createElement('img')
+    let id = document.createElement("h3")
+    let name = document.createElement("h3")
+    let brand = document.createElement("p")
+    let type = document.createElement("p")
+    let price = document.createElement("p")
+
+    img.setAttribute("src",el.image)
+    id.textContent = el.id
+    name.textContent = el.name
+    brand.textContent = el.brand
+    type.textContent = el.type
+    price.textContent = el.price
+
+    card.append(img,id,name,brand,type,price)
+    container.append(card)
+  });
+}
+})
+
+
+
 

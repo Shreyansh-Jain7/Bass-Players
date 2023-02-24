@@ -67,32 +67,54 @@
        <div id="products"></div>
     </div>
 
+    
     <div id="productsetting">
-        <button id="fetchButton">Fetch All Products</Button>
+        <button id="fetchButton" class="fetch1">Fetch Baitcast Reels</Button>
+        <button id="fetchButton" class="fetch2">Fetch Sonar Accessories</Button>
         <div id="addproducts">
         <p>Add Product:-</p>
+        <select id="select">
+            <option value="baitcastreels">Baitcast Reels</option>
+            <option value="sonar">Sonar Accessories</option>
+        </select>
         <input type="text" value="" placeholder="Name">
         <input type="link" value="" placeholder="Image URL">
         <input type="text" value="" placeholder="Brand">
+        <input type="text" value="" placeholder="Rating(E.g.-4.1/5, 4.5)">
         <input type="text" value="" placeholder="Type">
         <input type="text" value="" placeholder="Price">
+        <input type="text" value="" placeholder="Description">
+        <input type="text" value="" placeholder="MaxDrag (E.g.- 11 Lbs, 12 Lbs)">
+        <input type="text" value="" placeholder="Model Number">
         <button id="submit">ADD</button>
         </div><hr>
 
         <div id="addproducts">
             <p>Update Product:-</p>
-            <input type="number" value="" placeholder="ID">
+            <input type="number" value="" placeholder="ID" min="1" max="1000">
+            <select id="select">
+                <option value="baitcastreels">Baitcast Reels</option>
+                <option value="sonar">Sonar Accessories</option>
+            </select>
             <input type="text" value="" placeholder="Name">
             <input type="link" value="" placeholder="Image URL">
             <input type="text" value="" placeholder="Brand">
+            <input type="text" value="" placeholder="Rating(E.g.-4.1/5, 4.5)">
             <input type="text" value="" placeholder="Type">
             <input type="text" value="" placeholder="Price">
+            <input type="text" value="" placeholder="Description">
+            <input type="text" value="" placeholder="MaxDrag (E.g.- 11 Lbs, 12 Lbs)">
+            <input type="text" value="" placeholder="Model Number">
             <button id="submit">UPDATE</button>
         </div><hr>
 
         <div id="addproducts">
             <p>Delete Product:-</p>
             <input type="number" value="" placeholder="ID">
+            <select id="select">
+                <option value="baitcastreels">Baitcast Reels</option>
+                <option value="sonar">Sonar Accessories</option>
+            </select>
             <button id="submit">DELETE</button>
         </div>
 
