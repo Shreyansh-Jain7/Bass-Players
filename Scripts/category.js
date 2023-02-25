@@ -96,10 +96,10 @@ function sortRating(){
 // displayProducts(fetchedData);
 
 const baseServerUrl =   "https://dysfunctional-stomach-1310.onrender.com";
-
+let cat=localStorage.getItem("cat");
 async function fetchProducts(){
     try{
-      let res = await fetch(`${baseServerUrl}/baitcastreels`,{
+      let res = await fetch(`${baseServerUrl}/${cat}`,{
               method : 'GET',
               headers : {
                 "Content-type": "application/json",
@@ -114,8 +114,8 @@ async function fetchProducts(){
       return error
     }
   
-  }
-  fetchProducts()
+}
+fetchProducts()
 
 
 
