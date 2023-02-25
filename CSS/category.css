@@ -127,14 +127,14 @@ background-color: rgb(180, 178, 178);
 
 
 }
-input{
+/* input{
 background: transparent;
 height: 50px;
 border: 0px;
 outline: 0px;
 width: 650px;
 
-}
+} */
 .icon-search{
 color: black;
 }
@@ -239,7 +239,7 @@ color: green;
   }
   
   #product-container1{
-    width: 75%;
+    width: 77%;
     background-color: white;
     margin-top: 0;
   }
@@ -268,7 +268,7 @@ color: green;
   }
   #product-container>div>img{
       width: 100%;
-      height: 300px;
+      height: 250px;
   }
   #main{
     display: flex;
@@ -276,7 +276,7 @@ color: green;
     align-items: flex-start;
   }
   #sort{
-    width: 23%;
+    width: 20%;
     margin: auto;
     background-color: white;
     margin-top: 0;
