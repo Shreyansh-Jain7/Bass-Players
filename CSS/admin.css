@@ -28,10 +28,11 @@ body{
 }
 #welNote{
     margin-left: 20px;
+    font-family: 'Golos Text', sans-serif;
 }
 #logout{
     width: 21%;
-    height: 30px;
+    height: 40px;
     margin: auto;
     background-color: black;
     color: white;
@@ -184,3 +185,50 @@ body{
   height: 38px;
   margin-bottom: 10px
 }
+
+
+
+/* ---------------------Responsiveness--------------------- */
+
+@media only screen and (max-width: 1200px){
+
+    #products{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap:10px;
+    }
+  
+    #logout{
+      width: 21%;
+      height: 40px;
+  }
+  }
+  
+  
+@media only screen and (max-width: 1000px){
+  
+    #products{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap:10px;
+    }
+  
+    #logout{
+      width: 21%;
+      height: 40px;
+  }
+  }
+  
+  
+  @media only screen and (max-width: 600px){
+  
+    #products{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      gap:10px;
+    }
+    #logout{
+      width: 21%;
+      height: 40px;
+  }
+  }
