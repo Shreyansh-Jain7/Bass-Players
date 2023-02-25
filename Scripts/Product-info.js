@@ -1,25 +1,10 @@
 //
 
-let obj = {
-    id:1,
-    image:{firstimg:"https://assets.basspro.com/image/upload/b_rgb:FFFFFF,c_limit,dpr_1.0,f_auto,h_1289,q_auto,w_2900/c_limit,h_1289,w_2900/v1/ProductImages/200/master1_150122075110064_main?pgw=1",
-secondimg:"https://assets.basspro.com/image/upload/b_rgb:FFFFFF,c_limit,dpr_1.0,f_auto,h_755,q_auto,w_1700/c_limit,h_755,w_1700/v1/ProductImages/200/master1_150122075110064_alt1?pgw=1"},
-price: 699,
-title: "Garmin ECHOMAP UHD 93sv Fish Finder/Chartplotter Combo with GT54 Transducer",
-brand: "Garmin",
-details: "Find more fish with the Garmin® ECHOMAP™ UHD 93sv Fish Finder/Chartplotter Combo with GT54 Transducer, its bright, sunlight-readable 9 touch screen with keyed assist. The GT54 transducer gives you Ultra High-Definition ClearVü and SideVü scanning sonars for crystal-clear images of what's around and below your boat, as well as Garmin high wide CHIRP traditional sonar for remarkable target separation, all in the same transducer. Preloaded LakeVü g3 inland maps with integrated Navionics® data cover more than 17,000 lakes with up to 1' contours. The Garmin ECHOMAP UHD 93sv Fish Finder/Chartplotter Combo features a quick-release bail mount, making it easy to remove and take with you. NMEA 2000® and NMEA 0183 network support provides engine data, sensor connection, autopilot integration, and more. This ECHOMAP fish finder even brings compatibility with select trolling motors for full control of the motor from the screen plus the ability to route to waypoints, follow tracks, and more.",
-color: "Black",
-size: 9,
-webID: "234kd2n320dx",
-ratings: 5.3,
-reviews: 324,
-saving: "$200"
-}
 
-localStorage.setItem("Data", JSON.stringify(obj))
+// localStorage.setItem("product", JSON.stringify(obj))
 
 
-let dummyData = JSON.parse(localStorage.getItem("Data"))
+let dummyData = JSON.parse(localStorage.getItem("product"))
 
 
 let mainImg = document.getElementById("img_right")
@@ -35,43 +20,43 @@ let price2 = document.querySelector("#rightsection>div>h2")
 
 
 
-title.innerText = dummyData.title
+title.innerText = dummyData.name
 
 
 
-rating.innerText = `${dummyData.ratings} (${dummyData.reviews})` 
+rating.innerText = `${dummyData.rating} (283)` 
 
 let imageTag = document.createElement("img")
-imageTag.setAttribute("src",dummyData.image.firstimg)
+imageTag.setAttribute("src",dummyData.image)
 imageTag.className = "imageTag"
 mainImg.append(imageTag)
 
 
-price.innerText = `Price:- $${dummyData.price} (save ${dummyData.saving})`
+price.innerText = `Price:- ${dummyData.price} (save $230)`
 
 brand.innerText = dummyData.brand
 
-details.innerText = dummyData.details
+details.innerText = dummyData.description
 
 let upperImg = document.createElement("img")
-upperImg.setAttribute("src",dummyData.image.firstimg)
+upperImg.setAttribute("src",dummyData.image)
 upperImg.className = "sideImg"
 smallImg1.append(upperImg)
 
 let lowerImg = document.createElement("img")
-lowerImg.setAttribute("src",dummyData.image.secondimg)
+lowerImg.setAttribute("src",dummyData.image)
 lowerImg.className = "sideImg"
 smallImg2.append(lowerImg)
 
 smallImg2.addEventListener("click",()=>{
-    imageTag.setAttribute("src",dummyData.image.secondimg)
+    imageTag.setAttribute("src",dummyData.image)
     mainImg.append(imageTag)
     
 })
 
 
 smallImg1.addEventListener("click",()=>{
-    imageTag.setAttribute("src",dummyData.image.firstimg)
+    imageTag.setAttribute("src",dummyData.image)
     mainImg.append(imageTag)
    
 })
