@@ -5,6 +5,9 @@
     /* background-color: black; */
     /* color: white; */
 }
+.maindiv{
+    height: 2000px;
+}
 .first{
     display: flex;
     gap: 20px;
@@ -224,6 +227,100 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     height: auto;
 
 }
+.addtocart{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    
+}
+#leftsection{
+    width: 60%;
+}
+
+.addtocart>div{
+    /* border: 1px solid blue; */
+    width: 50%;
+    height: auto;
+}
+#rightsection{
+    display: flex;
+    color: black;  
+    width: 40%;
+    /* border: 1px solid black; */
+}
+.btn{
+    margin-top: 4%;
+}
+#rightsection>div>h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+}
+
+#rightsection>div{
+    width: 50%;
+    height: auto;
+    display: flex;
+
+    /* border: 1px solid black; */
+    align-content: center;
+    /* gap: 10px; */
+    margin: auto;
+    /* margin-top: 2%; */
+}
+
+#rightsection>div>button{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+
+}
+#rightsection>div>div{
+    /* border: 1px solid black; */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    /* padding: 2%; */
+    
+}
+
+#product_chart{
+    /* border: 1px solid black; */
+    width: 95%;
+    height: 400px;
+    margin: auto;
+    margin-top: 8%;
+    
+}
+#product_chart>h2{
+    margin-top: 1%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: -70%;
+    /* color: black; */
+    font-size: 30px;
+}
+
+
+
+#addingCart{
+    width: 170px;
+    height:40px;
+    margin-top: 100px;
+    margin: auto;
+    margin-left: 60%;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(9, 65, 9);
+}
+
 
 
 /* ****************************************************************************** */
@@ -241,8 +338,8 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
         justify-content: space-evenly;
         /* margin-left: 40%; */
         /* margin-right: 10%; */
-    
-       position: static;
+    /* margin-top: 3%; */
+       /* position: fixed; */
         background-color: rgb(179, 212, 201);
         
     } 
@@ -252,7 +349,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     border: 1px solid red;
     padding: 20px;
     /* float: right; */
-  
+    position: fixed;
 }
    
 /* ===========================nav1========================== */
