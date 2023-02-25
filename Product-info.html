@@ -97,10 +97,6 @@
 <hr style="margin-top: 46px;">
 
 
-
-
-
-
 <div id="parent3">
 
     <div class="dropdown">
@@ -326,9 +322,12 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <div id="time"><h4>ORDER BY 4PM E.T. FOR FEB 27 DELIVERY</h4></div>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-                <label id="label1" for="">Retrieve</label><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <select name="" id="Retrieve">
+               
+                <div class="addtocart">
+                  <div id="leftsection">
+                    <label id="label1" for="">Retrieve</label><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <select name="" id="Retrieve">
                     <option value="nothing">Please Choose...</option>
                     <option value="left">Left</option>
                     <option value="right">Right</option>
@@ -343,6 +342,21 @@
                     <option value="2nd">7.4:1</option>
                     <option value="3rd">8.6:1</option>
                 </select>
+                  </div>
+                  <div id="rightsection">
+                    <div>
+                      <h2 id="price">Price</h2>
+                    </div>
+                    <div>
+                    <button id="negative" class="btn">-</button>
+                    <div id="quantity">1</div>
+                    <button id="positive" class="btn">+</button>
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                <button id="addingCart">Add To Cart</button>
                 <br>
                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
@@ -351,6 +365,11 @@
                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
                 <button id="ShopBelow">Shop Below</button>
             </div>
+            
+          </div>
+          <div id="product_chart">
+            <h2>YOU MAY ALSO LIKE</h2>
+           
           </div>
         </div>
     </header>
