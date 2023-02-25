@@ -123,7 +123,7 @@ function displayData(data){
 }
 })
 
-let selected = document.querySelector("select")
+let selected = document.querySelector("#select")
 let title = document.querySelector("#name")
 let image = document.querySelector("#image")
 let brand = document.querySelector("#brand")
@@ -135,19 +135,20 @@ let maxdrag = document.querySelector("#maxdrag")
 let model = document.querySelector("#model")
 let submit = document.querySelector("#add")
 
-let titleV = title.value
-let imageV = image.value
-let brandV = brand.value
-let ratingV = rating.value
-let typeV = type.value
-let priceV = price.value
-let descriptionV = description.value
-let maxdragV = maxdrag.value
-let modelV = model.value
-console.log(titleV)
-console.log(selected.value)
+
+
 
 add.addEventListener("click",function(e){
+
+  let titleV = title.value
+  let imageV = image.value
+  let brandV = brand.value
+  let ratingV = rating.value
+  let typeV = type.value
+  let priceV = price.value
+  let descriptionV = description.value
+  let maxdragV = maxdrag.value
+  let modelV = model.value
 
   if(selected.value == "baitcastreels"){
 
@@ -202,7 +203,7 @@ add.addEventListener("click",function(e){
   
     async function fetchProducts(){
       try{
-        let res = await fetch(`${baseServerUrl}/baitcastreels`,{
+        let res = await fetch(`${baseServerUrl}/sonar`,{
                 method : 'POST',
                 body : JSON.stringify(productObj2),
                 headers : {
@@ -224,7 +225,33 @@ add.addEventListener("click",function(e){
 })
 
 
-
 let logout = document.querySelector("#logout")
 
-logout.addEventListener("click")
+logout.addEventListener("click",function(){
+  window.location.href = "index.html"
+})
+
+
+document.querySelector(".delete").addEventListener("click",()=>{
+
+  let category = document.querySelector(".productid").value
+  let delid = document.querySelector("#delid").value
+
+
+  deleteProduct(category,delid)
+
+})
+
+
+
+function deleteProduct(category,delid){
+
+
+  fetch(`${baseServerUrl}/${category}/${delid}`, {
+    method: 'DELETE',
+  })
+  .then(res => res.text()) // or res.json()
+  .then(data => console.log(data))
+
+
+}
