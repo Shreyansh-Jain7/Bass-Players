@@ -178,7 +178,7 @@ nav{
         justify-content: space-between;
         
     }
-    .sub{
+    /* .sub{
         position: absolute;
         width:100%;
         height: 400px;
@@ -186,7 +186,7 @@ nav{
         border: 1px soild gray;
         
         
-    }
+    } */
     
 
     /* .dropbtn{
