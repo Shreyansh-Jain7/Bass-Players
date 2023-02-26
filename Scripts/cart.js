@@ -2,7 +2,7 @@ let carts=JSON.parse(localStorage.getItem("cartData")) || [] ;
 
 
 let tbodyel = document.querySelector(".cart-container")
-
+let bought=[];
 display(carts)
 function display(data){
     tbodyel.innerHTML=null;
@@ -43,12 +43,16 @@ function display(data){
         Price = carts.reduce((acc, el) => acc + Number(el.price.slice(1)), 0);
         console.log(Math.floor(Price));
         if(carts.length>=1){
-            document.querySelector("#pan").innerText = "₹" + Price;
+            document.querySelector("#pan").innerText = "$" + Price;
         }else{
-            document.querySelector("#pan").innerText = "₹" + 0;
+            document.querySelector("#pan").innerText = "$" + 0;
         }
         
-        
+        buyBtn.addEventListener("click",()=>{
+            bought.push(element);
+            localStorage.setItem("buyproduct",JSON.stringify(bought));
+            window.location.href="./payment.html";
+        })
         console.log(card)
         card.append(img,name,price,div)
         tbodyel.append(card)
