@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category</title>
-    <link rel="stylesheet" href="./CSS/category.css">
+    <title id="title"></title>
+<link rel="stylesheet" href="./CSS/category.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+
+<script src="https://kit.fontawesome.com/8baad6f106.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 </head>
+
+
+ 
+
 <body>
-<div id="nav">
+   <div id="nav">
     <div>
         <p >MARIN SALE | Shop Now ></p>
     </div>
@@ -77,211 +87,526 @@
     
     <div id="lefta">
         <img style="width: 100px;border-radius: 50%;" src="./Bass (1).png" alt="">
-        <div id="man">
-            <input type="text" placeholder="what we can help you to find?">
+        
+
+
+        
+       <div id="man">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            
+            <input id="search" type="text" placeholder="  what we can help you to find? ">
+
           
-             <a href="#">  <i class="fa fa-search icon-search" ></i></a> 
-            
-            
-            
-        </div>
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          
+        </div> 
        
     </div>
 
     <div id="righta">
-        <img style="width: 50px;height: 50px;margin-top: 8px;" src="./login.png" alt="">
-        <img style="width: 50px;height: 50px;margin-top: 8px;"src="./shopping-cart.png" alt="">
+        <img src="./login.png" alt="">
+        <img src="./shopping-cart.png" alt="">
     </div>
     
 </div>
 <hr style="margin-top: 46px;">
 
 
+<!-- ==================nav================ -->
+<div id="lowerNavBar">
+    <div id="subLowerNavBar">
+      <ul>
+        
+        <li id="start">
+          <a href="" style=" font-size: 19px;">Fishing</a>
+          <div class="dropDownDiv">
+            <div class="dropDownDivItems">
+              <div>
+                <h4>FISHING REELS </h4>
+                <ul>
+                    <li id="bait"><a href="./category.html">Baitcast Reels</a></h3>
+                    <li><a href=""> Spinning Reels</a></li>
+                    <li><a href="">Saltwater Reels</a></li>
+                    <li><a href="">Fly Reels</a></li>
+                    <li><a href="">View All</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4>FISHING ROADS</h4>
+                <ul>
+                  <li><a href="">Casting Roads</a></li>
+                  <li><a href="">Spinning Roads</a></li>
+                  <li><a href="">Saltwater Roads</a></li>
+                  <li><a href="">Fly Rods</a></li>
+                  <li><a href="">View All</a></li>
+                 
+
+                </ul>
+              </div>
+              <div>
+                <h4>ROD & REEL COMBOS</h4>
+                <ul>
+                  <li><a href="">Baitcast Combos</a></li>
+                  <li><a href="">Spinning Combos</a></li>
+                  <li><a href="">Saltwater Combos</a></li>
+                  <li><a href="">Kid's Fishing Rod & Reels</a></li>
+                  <li><a href="">View All</a></li>
+                 
+
+                </ul>
+              </div>
+              <div>
+                <h4>LURES</h4>
+                <ul>
+                    <li><a href="">Hard Bait Lures</a></li>
+                    <li><a href="">Soft Bait Lures</a></li>
+                    <li><a href="">Jigs</a></li>
+                  <li><a href="">View All</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4>FISSING ACCESSORIES</h4>
+                <ul>
+                  <li><a href="">Tools & Pliers</a></li>
+                  <li><a href="">Filet Knives & Tables</a></li>
+                  <li><a href="">Rod Holders & Racks </a></li>
+                  <li><a href="">View All</a></li>
+                </ul>
+              </div>
+              <div>
+                <img src="https://assetshare.basspro.com/content/dam/bps-general-assets/web/site-elements/images/Bargain-Caves/BCFishing.jpg" alt="">
+              </div>
+             
+            </div>
+
+          </div>
+        </li>
+        <li>
+          <a href=""style=" font-size: 19px;">Boating</a>
+          <div class="dropDownDiv">
+            <div class="dropDownDivItems">
+              <div>
+                <h4>MARINE ELECTROINCS</h4>
+                <ul>
+                    <li><a href="">Fish Finders & Chartplotters</a></li>
+                  <li id="sonar"><a href="./category.html">Sonar Accessories</a></li>
+                  <li><a href="">Marine Radios & stereos</a></li>
+                  <li><a href="">Marine Mounts & Cases</a></li>
+                  <li><a href="">View All</a></li>
+             
+                  
+                </ul>
+              </div>
+              <div>
+                <h4>TROLLING MOTORS & ACCESSORIES</h4>
+                <ul>
+                  <li><a href="">Freshwater Trolling Motors</a></li>
+                  <li><a href="">Saltwater Trolling Motors</a></li>
+                  <li><a href="">Trolling Motors Accessories</a></li>
+                  
+
+                </ul>
+              </div>
+              <div>
+                <h4>BOAT ACCESSORIES</h4>
+                <ul>
+                  <li><a href="">Anchoring Rope & Docking </a></li>
+                  <li><a href="">Rod Holders & Fishing </a></li>
+                  <li><a href="">Accessories </a></li>
+                  <li><a href="">Chargers & Portable Power</a></li>
+                  <li><a href="">View All </a></li>
+
+                  
+
+                </ul>
+              </div>
+              <div>
+                <h4>BOAT COVERS & BIMINIS</h4>
+                <ul>
+                  <li><a href="">Custom Fit Covers</a></li>
+                  <li><a href="">Universal Covers</a></li>
+                  <li><a href="">Bimini Tops</a></li>
+                  <li><a href="">Viwe All</a></li>
+
+                </ul>
+              </div>
+              <div>
+                <img src="https://assetshare.basspro.com/content/dam/bps-general-assets/web/site-elements/images/Bargain-Caves/BCBoating.jpg" alt="">
+              </div>
+              
+       
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="" style=" font-size: 19px;">Shooting</a>
+          <div class="dropDownDiv">
+            <div class="dropDownDivItems">
+              <div>
+                <h4>GUNS </h4>
+                <ul>
+                  <li><a href="">Centerfire Pistol</a></li>
+                  <li><a href="">Centerfire Rifles</a></li>
+                  <li><a href="">Rimfire Rifles</a></li>
+                  <li><a href="">Shotguns</a></li>
+                  <li><a href="">View All</a></li>
 
 
 
+                </ul>
+              </div>
+              <div>
+                <h4>AMMUNITION</h4>
+                <ul>
+                  <li><a href="">Centerfire Rifle Ammo</a></li>
+                  <li><a href="">Handgun Ammo</a></li>
+                  <li><a href="">Rimfire Ammo</a></li>
+                  <li><a href="">Shotshell Ammo</a></li>
 
-<div id="parent3">
+                </ul>
+              </div>
+              <div>
+                <h4>OPTICS & SCOPES</h4>
+                <ul>
+                  <li><a href="">Binoculars</a></li>
+                  <li><a href="">Scopes</a></li>
+                  <li><a href="">Rangerfinders</a></li>
+                  <li><a href="">Spotting Scopes</a></li>
+                  <li><a href="">View All</a></li>
+                 
+                </ul>
+              </div>
+              <div>
+                <h4>GUN STORAGE </h4>
+                <ul>
+                  <li><a href="">Gun Cabinets & Concealment </a></li>
+                  <li><a href="">Gun Safes & Vaults</a></li>
+                  <li><a href="">Gun Socks</a></li>
+                  <li><a href="">Rifle Shotgun & Pistol Cases</a></li>
+                  
+                </ul>
+              </div>
+              <div>
+                <img src="https://assetshare.basspro.com/content/dam/bps-general-assets/web/site-elements/images/Bargain-Caves/BCShooting.jpg" alt="">
+              </div>
+            
+              
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="" style=" font-size: 19px;">Hunting</a>
+          <div class="dropDownDiv">
+            <div class="dropDownDivItems">
+              <div>
+                <h4>ARCHERY </h4>
+                <ul>
+                    <li><a href="">Bows</a></li>
+                    <li><a href="">Arrows & Accessories</a></li>
+                    <li><a href="">Broadheads & Field Points</a></li>
+                    <li><a href="">Crossbows and Acessories</a></li>
+                    <li><a href="">View All</a></li>
+                   
+                </ul>
+              </div>
+              <div>
+                <h4>OPTICS & SCOPES</h4>
+                <ul>
+                  <li><a href="">Binoculars</a></li>
+                  <li><a href="">Scopes</a></li>
+                  <li><a href="">Rangerfinders</a></li>
+                  <li><a href="">Spotting Scopes</a></li>
+                  <li><a href="">Viwe All</a></li>
+                 
 
-    <div class="dropdown">
-        <button class="dropbtn">Fishing</button>
-        <div class="cont">
-      <a href="A">Beauty gift</a>
-      <a href="B">Cozy Shop</a>
-      <a href="C">Fine jewwlry</a>
-      <a href="D">Gift for him</a>
-      <a href="E">Gift for her</a>
+                </ul>
+              </div>
+              <div>
+                <h4>HUNTING ACCESSORIES</h4>
+                <ul>
+                  <li><a href="">2 Way Radios Amd GPS</a></li>
+                  <li><a href="">Ground Blinds</a></li>
+                  <li><a href="">Scents</a></li>
+                  <li><a href="">View All</a></li>
+          
 
-        </div>
+                </ul>
+              </div>
+              <div>
+                <h4>TREE STANDS</h4>
+                <ul>
+                  <li><a href="">Ladder Stands</a></li>
+                  <li><a href="">Fixed Position Stands</a></li>
+                  <li><a href="">Climbing Stands</a></li>
+                  <li><a href="">Box Blinds/Tripods</a></li>
+                  <li><a href="">View All</a></li>
 
+                </ul>
+              </div>
+              <div>
+                <div>
+                    <img src="https://assetshare.basspro.com/content/dam/bps-general-assets/web/site-elements/images/Bargain-Caves/BCHunting.jpg" alt="">
+                </div>
+              
+              
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="" style=" font-size: 19px;">Camping</a>
+          <div class="dropDownDiv">
+            <div class="dropDownDivItems">
+              <div>
+                <h4>TENTS </h4>
+                <ul>
+                    <li><a href="">Dome Tents </a></li>
+                    <li><a href="">Backpack Tents</a></li>
+                    <li><a href="">Truck Tents</a></li>
+                    <li><a href="">Tent Accessories</a></li>
+                    <li><a href="">View All</a></li>
+                    
+                </ul>
+              </div>
+              <div>
+                <h4>SLEEPING GEAR</h4>
+                <ul>
+                  <li><a href="">Sleeping Bages</a></li>
+                  <li><a href="">Sleeping Pads</a></li>
+                  <li><a href="">Cots</a></li>
+                  <li><a href="">Hammocks</a></li>
+                  <li><a href="">View All</a></li>
+                
+
+                </ul>
+              </div>
+              <div>
+                <h4>CAMP ESSENTIAL</h4>
+                <ul>
+                  <li><a href="">Camp Chairs & Furniture </a></li>
+                  <li><a href="">Camp Accessories</a></li>
+                  <li><a href="">Drinkware</a></li>
+                  <li><a href="">Generators</a></li>
+                  <li><a href="">View All</a></li>
+                  
+
+                </ul>
+              </div>
+              <div>
+                <h4>LIGHTING</h4>
+                <ul>
+                  <li><a href="">Flashlight </a></li>
+                  <li><a href="">Headlamps</a></li>
+
+                  <li><a href="">Lanterns</a></li>
+
+                  <li><a href="">Batteries</a></li>
+                  <li><a href="">View All</a></li>
+
+
+
+                </ul>
+              </div>
+              
+              <div>
+                <ul>
+                <img src="https://assetshare.basspro.com/content/dam/bps-general-assets/web/site-elements/images/Bargain-Caves/BCCamping.jpg" alt="">
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </li>
+        <li>
+          <a href=""style=" font-size: 19px;">Clothing</a>
+          <div class="dropDownDiv">
+            <div class="dropDownDivItems">
+              <div>
+                <h4>MEN's CLOTHING </h4>
+                <ul>
+                    <li><a href="">Jackets Coats & Outerwear</a></li>
+                    <li><a href="">Shirts & Tops</a></li>
+                    <li><a href="">Pants & shorts</a></li>
+                    <li><a href="">Cloting Accessories</a></li>
+                    <li><a href="">Rain Gear</a></li>
+                    <li><a href="">View All</a></li>
+                    
+                    
+                </ul>
+              </div>
+              <div>
+                <h4>WOMEN's CLOTING</h4>
+                <ul>
+                    <li><a href="">Jackets Coats & Outerwear</a></li>
+                    <li><a href="">Shirts & Tops</a></li>
+                    <li><a href="">Pants & shorts</a></li>
+                    <li><a href="">Cloting Accessories</a></li>
+                    <li><a href="">Rain Gear</a></li>
+                    <li><a href="">Hats & Caps</a></li>
+                    <li><a href="">Plus Sizes</a></li>
+                    <li><a href="">View All</a></li>
+                 
+                  
+
+                </ul>
+              </div>
+              <div>
+                <h4>KID's CLOTHING</h4>
+                <ul>
+                    <li><a href="">Jackets Coats & Outerwear</a></li>
+                    <li><a href="">Shirts & Tops</a></li>
+                    <li><a href="">Pants & shorts</a></li>
+                    <li><a href="">Cloting Accessories</a></li>
+                    <li><a href="">Rain Gear</a></li>
+                    <li><a href="">My First Combo</a></li>
+                    <li><a href="">Sleepwear</a></li>
+                    <li><a href="">View All</a></li>
+
+                </ul>
+              </div>
+              <div>
+                <h4>HUNTING CLOTHING</h4>
+                <ul>
+                  <li><a href="">Men's Hunting Cloting </a></li>
+                  <li><a href="">Women's Hunting Clothing</a></li>
+                  <li><a href="">Kid's Hunting Cloting</a></li>
+                  <li><a href="">Tactical Cloting </a></li>
+                  <li><a href="">New Hunting Cloting</a></li>
+                  <li><a href="">View All</a></li>
+                </ul>
+              </div>
+              <div>
+                <img src="https://assetshare.basspro.com/content/dam/bps-general-assets/web/site-elements/images/Bargain-Caves/BCLadies_Clothing.jpg" alt="">
+                
+              </div>
+              
+            </div>
+
+          </div>
+        </li>
+        <li>
+          <a href=""style=" font-size: 19px;">Home & Gifts</a>
+          <div class="dropDownDiv">
+            <div class="dropDownDivItems">
+              <div>
+                <h4>HOME DECOR</h4>
+                <ul>
+                    <li><a href="">Bedding </a></li>
+                    <li><a href="">Wall Decor</a></li>
+                    <li><a href="">Area Rugs & Door Mats</a></li>
+                    <li><a href="">Home Accents</a></li>
+                    <li><a href="">View All</a></li>
+                   >
+                </ul>
+              </div>
+              <div>
+                <h4>OUTDOOR HOME DECOR</h4>
+                <ul>
+                  <li><a href="">Fire Pits & Log Racks</a></li>
+                  <li><a href="">Lawn & Garden </a></li>
+                  <li><a href="">Patio Furniture</a></li>
+                  <li><a href="">Wind Chimes</a></li>
+                  <li><a href="">View All</a></li>
+                
+
+                </ul>
+              </div>
+              <div>
+                <h4>FURNITURE</h4>
+                <ul>
+                  <li><a href="">Bedroom</a></li>
+                  <li><a href="">Recliners</a></li>
+                  <li><a href="">Sofas & Loverseats</a></li>
+                  <li><a href="">Furniture Accents</a></li>
+                  <li><a href="">View All</a></li>
+                 
+
+                </ul>
+              </div>
+              <div>
+                <h4>NATURE</h4>
+                <ul>
+                  <li><a href="">Bird Feeders </a></li>
+                  <li><a href="">Birs Houses</a></li>
+                  <li><a href="">Weater Tech</a></li>
+                  <li><a href="">View All</a></li>
+
+                </ul>
+              </div>
+              
+              <div>
+              <img src="https://assetshare.basspro.com/content/dam/bps-general-assets/web/site-elements/images/Bargain-Caves/BCHome_Gifts.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+        </li>
+        <li>
+          <a href=""style=" font-size: 19px;"> Footwear</a>
+          <div class="dropDownDiv">
+            <div class="dropDownDivItems">
+              <div>
+                <h4>MEN'S SHOES & BOOTS </h4>
+                <ul>
+                  <li><a href="">Hunting Boots</a></li>
+                  <li><a href="">Hiking Boots</a></li>
+                  <li><a href="">Work Boots</a></li>
+                  <li><a href="">Slippers</a></li>
+                  <li><a href="">View All</a></li>
+
+                </ul>
+              </div>
+              <div>
+                <h4>WOMEN'S SHOES & BOOTS</h4>
+                <ul>
+                  <li><a href="">All Sarees</a></li>
+                  <li><a href="">Silk Sarees</a></li>
+                  <li><a href="">Cotton Silk Sarees</a></li>
+                  <li><a href="">Cotton Sarees</a></li>
+                  <li><a href="">Georgette Sarees</a></li>
+                  <li><a href="">Chiffon Sarees</a></li>
+                  <li><a href="">Satin Sarees</a></li>
+                  <li><a href="">Embroidered Sarees</a></li>
+
+                </ul>
+              </div>
+              <div>
+                <h4>KID'S SHOES & BOOTS</h4>
+                <ul>
+                  <li><a href="">All Kurtis</a></li>
+                  <li><a href="">Anarkali Kurtis</a></li>
+                  <li><a href="">Rayon Kurtis</a></li>
+                  <li><a href="">Cotton Kurtis</a></li>
+                  <li><a href="">Embroidered Kurtis</a></li>
+                  <li><a href="">Chiffon Sarees</a></li>
+                  <li><a href="">Satin Sarees</a></li>
+                  <li><a href="">Embroidered Sarees</a></li>
+
+                </ul>
+              </div>
+              <div>
+                <h4>WADERS</h4>
+                <ul>
+                  <li><a href="">Hunting Waders</a></li>
+                  <li><a href=""> Waders</a></li>
+                  <li><a href=""> Waders Boots</a></li>
+                  <li><a href="">Hunting Waders</a></li>
+                  <li><a href=""> Waders Accessories</a></li>
+
+                </ul>
+              </div>
+              <div>
+                <img src="https://assetshare.basspro.com/content/dam/bps-general-assets/web/site-elements/images/Bargain-Caves/BCShoes_Boots.jpg" alt="">
+               
+              </div>
+              
+            </div>
+
+          </div>
+        </li>
+        
+      </ul>
     </div>
-
-    <div class="dropdown">
-        <button class="dropbtn"> Boating</button>
-        <div class="cont">
-      <a href="A">New Arrivals</a>
-      <a href="B">Active Shop</a>
-      <a href="C">Designer</a>
-      <a href="D">Polos</a>
-      <a href="E">Hoodies</a>
-      <a href="F">Shirt</a>
-      <a href="G">Boots</a>
-      <a href="H">Sneakers</a>
-      <a href="I">Hats</a>
-      <a href="J">Wallets</a>
-
-        </div>
-
-    </div>
-
-    <div class="dropdown">
-        <button class="dropbtn">Shooting</button>
-        <div class="cont">
-      <a href="./product.html">New Arrivals</a>
-      <a href="B">Active Shop</a>
-      <a href="C">Designer</a>
-      <a href="D">Dresses</a>
-      <a href="E">Pants</a>
-      <a href="F">Tops</a>
-      <a href="G">Jeans</a>
-      <a href="H">Suits</a>
-      <a href="I">Formal</a>
-      <a href="J">ActiveWear</a>
-
-        </div>
-
-    </div>
-  
-    <div class="dropdown">
-        <button class="dropbtn">Hunting</button>
-        <div class="cont">
-      <a href="./product.html">New Arrivals</a>
-      <a href="B">Baby Essentials</a>
-      <a href="C">One-Pieces</a>
-      <a href="D">Boy's(8-20)</a>
-      <a href="E">Girl's(7-16)</a>
-      <a href="F">Baby</a>
-      <a href="G">Toys&Games</a>
-      <a href="H">Kid's Shop</a>
-      <a href="I">DressWear</a>
-      <a href="J">Pajamas</a>
-
-        </div>
-
-    </div>
-    
-
-    <div class="dropdown">
-        <button class="dropbtn">Camping</button>
-        <div class="cont">
-      <a href="./product.html">New Arrivals</a>
-      <a href="B">Eye Makeup</a>
-      <a href="C">Face Makeup</a>
-      <a href="D">Masks</a>
-      <a href="E">MAC</a>
-      <a href="F">Rollers</a>
-      <a href="G">Shaving</a>
-      <a href="H">Skin Care</a>
-      <a href="I">Mositurizers</a>
-      <a href="J">Palettes&Sets</a>
-
-        </div>
-
-    </div>
- 
-    <div class="dropdown">
-        <button class="dropbtn">Clothing</button>
-        <div class="cont">
-      <a href="./product.html">New Arrivals</a>
-      <a href="B">Necklaces</a>
-      <a href="C">Rings</a>
-      <a href="D">Diamond Guide</a>
-      <a href="E">Birthstones</a>
-      <a href="F">Luxury Watch</a>
-      <a href="G">Bracelets</a>
-      <a href="H">Bridal set</a>
-      <a href="I">Engagement</a>
-      <a href="J">Weeding Band</a>
-
-        </div>
-
-    </div>
-  
-
-    <div class="dropdown">
-        <button class="dropbtn">Footware</button>
-        <div class="cont">
-      <a href="./product.html">New Arrivals</a>
-      <a href="B">ChriStmas</a>
-      <a href="C">Electronics</a>
-      <a href="D">Health&Wellness</a>
-      <a href="E">Organization&Cleaning</a>
-      <a href="F">Rugs</a>
-      <a href="G">Windows</a>
-      <a href="H">Teatment</a>
-      <a href="I">Dinnerware</a>
-      <a href="J">Living Room</a>
-
-        </div>
-
-    </div>
-  
-    <div class="dropdown">
-        <button class="dropbtn">Ride</button>
-        <div class="cont">
-      <a href="./product.html">Active Brands</a>
-      <a href="B">F Exclusive</a>
-      <a href="C">Biltmore</a>
-      <a href="D">Crown&lvy</a>
-      <a href="E">Clinique</a>
-      <a href="F">Columbia</a>
-      <a href="G">COACH</a>
-      <a href="H">Free People</a>
-      <a href="I">IZOD</a>
-      <a href="J">Levi's</a>
-
-        </div>
-
-    </div>
-
-
-    <div class="dropdown">
-        <button class="dropbtn">Home & Gifts</button>
-        <div class="cont">
-      <a href="./product.html">Active Brands</a>
-      <a href="B">F Exclusive</a>
-      <a href="C">Biltmore</a>
-      <a href="D">Crown&lvy</a>
-      <a href="E">Clinique</a>
-      <a href="F">Columbia</a>
-      <a href="G">COACH</a>
-      <a href="H">Free People</a>
-      <a href="I">IZOD</a>
-      <a href="J">Levi's</a>
-
-        </div>
-
-    </div>
-
-
-    <div class="dropdown">
-        <button class="dropbtn">Bargain Cave</button>
-        <div class="cont">
-      <a href="./product.html">Active Brands</a>
-      <a href="B">F Exclusive</a>
-      <a href="C">Biltmore</a>
-      <a href="D">Crown&lvy</a>
-      <a href="E">Clinique</a>
-      <a href="F">Columbia</a>
-      <a href="G">COACH</a>
-      <a href="H">Free People</a>
-      <a href="I">IZOD</a>
-      <a href="J">Levi's</a>
-
-        </div>
-
-    </div>
-</div>
+  </div>
 <div id="path"><a href="./index.html"><span>Home</span></a><span>></span><a href="./category.html"><span id="procat"></span></a></div>
     <div id="main">
       <div id="sort">
@@ -292,13 +617,13 @@
         <div>
           <h3>Prices</h3>
           <input type="checkbox" name="100" value="100" class="prices">
-          <label for="100">Rs.100 and below</label><br>
+          <label for="100">$100 and below</label><br>
           <input type="checkbox" name="200" value="200" class="prices">
-          <label for="200">Rs.100- Rs.200</label><br>
+          <label for="200">$100-$200</label><br>
           <input type="checkbox" name="300" value="300" class="prices">
-          <label for="300">Rs.200- Rs.300</label><br>
+          <label for="300">$200- $300</label><br>
           <input type="checkbox" name="400" value="400" class="prices">
-          <label for="400">Rs.400 and above</label><br>
+          <label for="400">$400 and above</label><br>
           <hr>
           <h3>Brand</h3>
           <input type="checkbox" name="color1" value="Shimano" class="brand">
