@@ -34,6 +34,8 @@ document.querySelectorAll('.brand').forEach(x => {
     });
 });
 
+
+
 document.querySelectorAll('.type').forEach(x => {
     x.addEventListener('click', () => {
         let checkbox=x.value;
@@ -117,7 +119,25 @@ async function fetchProducts(){
 }
 fetchProducts()
 
+if(cat=="baitcastreels"){
+    document.querySelector("#procat").innerText="Baitcast Reels";
+    document.querySelector("#prohead").innerText="Baitcast Reels";
+    document.querySelector("#title").innerText="Baitcast Reels";
+}else{
+    document.querySelector("#procat").innerText="Sonar";
+    document.querySelector("#prohead").innerText="Sonar";
+    document.querySelector("#title").innerText="Sonar";
+}
 
+
+document.querySelector("#search-btn").addEventListener("click",()=>{
+    let q = document.querySelector("#search").value;
+    console.log(q);
+    let newData = fetchedData.filter((el) =>
+        el.name.toLowerCase().includes(q.toLowerCase())
+    );
+    displayProducts(newData);
+})
 
 function displayProducts(data){
     document.querySelector("#product-container").innerHTML=null;
