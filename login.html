@@ -58,10 +58,10 @@
       
      else if (email == el.email && password == el.password) {
         main.innerHTML = `<img width="30%"  src=" https://static.vecteezy.com/system/resources/previews/012/000/978/original/3d-rendering-of-cute-icon-illustration-success-payment-approved-png.png" />`
-        success.innerHTML=`<h3> please wait </h3>`
+        localStorage.setItem("loggedin", email[0])
         console.log("ok")
         setTimeout(() => {
-          location.replace("http://google.com");
+          location.replace("./index.html");
         }, 2000);
       } else  {
        next.innerHTML= `<button id="failed"><h2>Bad Credentials</h2> </button>`
