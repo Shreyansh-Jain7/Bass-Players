@@ -203,7 +203,7 @@ body{
             type="text"
             id="card-number"
             name="card-number"
-            placeholder="Enter your card number"
+            placeholder="Enter your card number" required
           />
         </div>
         <div class="form-group">
@@ -212,12 +212,12 @@ body{
             type="text"
             id="expiry-date"
             name="expiry-date"
-            placeholder="MM/YY"
+            placeholder="MM/YY" required
           />
         </div>
         <div class="form-group">
           <label for="cvv">CVV:</label>
-          <input type="text" id="cvv" name="cvv" placeholder="Enter your CVV" />
+          <input type="text" id="cvv" name="cvv" placeholder="Enter your CVV" required/>
         </div>
         <div class="form-group">
           <label for="name-on-card">Name on Card:</label>
@@ -225,7 +225,7 @@ body{
             type="text"
             id="name-on-card"
             name="name-on-card"
-            placeholder="Enter the name on your card"
+            placeholder="Enter the name on your card" required
           />
         </div>
         <div class="form-group">
@@ -234,7 +234,7 @@ body{
             type="email"
             id="email"
             name="email"
-            placeholder="Enter your email address"
+            placeholder="Enter your email address" required
           />
         </div>
         <div class="form-group">
@@ -243,7 +243,7 @@ body{
             type="text"
             id="billing-address"
             name="billing-address"
-            placeholder="Enter your billing address"
+            placeholder="Enter your billing address" required
           />
         </div>
         <div id="payment">
@@ -270,7 +270,7 @@ body{
           </div>
           <div><img src="" alt="" /></div>
         </div>
-        <button id="rsButton"><h4>Total Amount ₹ <span>0</span> </h4></button>
+        <button id="rsButton"><h4>Total Amount $ <span>0</span> </h4></button>
         <button id="payNow" type="submit">Pay Now</button>
         
       </form>
@@ -279,10 +279,10 @@ body{
 </html>
 
 <script>
-    let prodctsArray= JSON.parse(localStorage.getItem("buyproducts"));
+    let prodctsArray= JSON.parse(localStorage.getItem("cartData"));
 
     let Total=0;
-
+console.log(prodctsArray);
 
 function func(data){
 
@@ -301,8 +301,11 @@ function func(data){
     
         row.append(name, price)
         tbody.append(row)
-
-        Total+= el.price;
+        let cost="";
+        for(let z=1;z<el.price.length;z++){
+            cost+=el.price[z];
+        }
+        Total+= Number(cost);
     })
     
 

@@ -2,7 +2,6 @@ let carts=JSON.parse(localStorage.getItem("cartData")) || [] ;
 
 
 let tbodyel = document.querySelector(".cart-container")
-let bought=[];
 display(carts)
 function display(data){
     tbodyel.innerHTML=null;
@@ -25,10 +24,10 @@ function display(data){
         let button=document.createElement("button")
         button.innerText="Remove"
 
-        let buyBtn = document.createElement("button")
-        buyBtn.innerText = "Buy Now"
+        // let buyBtn = document.createElement("button")
+        // buyBtn.innerText = "Buy Now"
 
-        div.append(button,buyBtn)
+        div.append(button)
 
         button.addEventListener("click",()=>{
             carts.splice(id,1)
@@ -48,16 +47,18 @@ function display(data){
             document.querySelector("#pan").innerText = "$" + 0;
         }
         
-        buyBtn.addEventListener("click",()=>{
-            bought.push(element);
-            localStorage.setItem("buyproduct",JSON.stringify(bought));
-            window.location.href="./payment.html";
-        })
+        // buyBtn.addEventListener("click",()=>{
+        //     bought.push(element);
+        //     localStorage.setItem("buyproduct",JSON.stringify(bought));
+        //     window.location.href="./payment.html";
+        // })
         console.log(card)
         card.append(img,name,price,div)
         tbodyel.append(card)
     });
 }
 
-
+document.querySelector("#paynow").addEventListener("click",()=>{
+    window.location.href="./payment.html";
+})
         

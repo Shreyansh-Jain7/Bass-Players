@@ -639,7 +639,7 @@ h3{
     } 
 .footer{
     width: 100%;
-    border: 1px solid rgb(6, 213, 127);
+    
     margin: auto;
 }
 
@@ -648,7 +648,6 @@ h3{
     .footer1{
         width: 85%;
      
-        border: 1px solid red; ;
         display: flex;
         gap:80px;
         padding: 25px;
