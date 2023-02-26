@@ -1,4 +1,8 @@
 /* top navbar part */
+*{
+    padding: 0%;
+    margin: 0%;
+}
 body {
     /* font-family: Arial, Helvetica, sans-serif; */
     margin: 0;
@@ -141,15 +145,33 @@ body {
 
 #cartdata{
     height: auto;
-    width: 100%;
-    border: 1px solid blue;
+    width: 90%;
+    align-items: center;
+    /* border: 1px solid blue; */
     margin: auto;
-    margin-top: 15%;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   
+}
+#paydiv{
+    margin-top: 10%;
+}
+#paydiv>#paynow,#pan{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+#paynow{
+    width: 100px;
+    color: white;
+    border-radius: 40px;
 }
 .product-card{
     width: 80%;
     height: auto;
-    border: 0px solid black;
+    border: 1px solid black;
+    margin-right: 6%;
+    margin: auto;
     padding: 1%;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
@@ -161,4 +183,17 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     color: black;
+}
+
+.removebuy{
+    width:auto;
+    padding: 3%;
+    height: auto;
+    margin-left: 4%;
+    display: flex;
+    margin-left: 2%;
+    align-items: start;
+    gap: 10px;
+    border: 1px solid red;
+    margin: auto;
 }
