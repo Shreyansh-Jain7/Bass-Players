@@ -4,7 +4,7 @@
 // localStorage.setItem("product", JSON.stringify(obj))
 
 
-let dummyData = JSON.parse(localStorage.getItem("product"))
+let dummyData = JSON.parse(localStorage.getItem("product"))||[]
 
 
 let mainImg = document.getElementById("img_right")

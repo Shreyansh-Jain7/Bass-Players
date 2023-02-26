@@ -6,7 +6,7 @@
     /* color: white; */
 }
 .maindiv{
-    height: 2000px;
+    height: auto;
 }
 .first{
     display: flex;
@@ -36,7 +36,7 @@
 
 .middle>#middle_1{
     width: 60%;
-    height: 800px;
+    height: auto;
     border-right: 1px solid lightgray;
     border-left: 0px;
     border-top: 0px;
@@ -52,7 +52,7 @@
 
 .middle>#middle_2{
     width: 40%;
-    height: 800px;
+    height: auto;
     border-left: 1px solid lightgray;
     border-right: 0px;
     border-top: 0px;
@@ -291,9 +291,9 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 }
 
 #product_chart{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 95%;
-    height: 400px;
+    height: auto;
     margin: auto;
     margin-top: 8%;
     
@@ -642,7 +642,7 @@ color: green;
     
     }
     .footer1{
-        border: 1px solid red; ;
+        /* border: 1px solid red; ; */
         display: flex;
         gap:80px;
         padding: 25px;
