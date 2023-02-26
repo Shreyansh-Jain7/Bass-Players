@@ -196,7 +196,7 @@ function displayProducts(data){
 
         card.addEventListener("click",()=>{
             localStorage.setItem("product",JSON.stringify(element));
-            window.location.href="../dysfunctional-stomach-1310/product_info.html";
+            window.location.href="product_info.html";
         })
         count++;
     })
