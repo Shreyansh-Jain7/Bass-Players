@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Payment Page</title>
+    
+    <style>
+        * {
+
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+background-image: url("https://www.inventiva.co.in/wp-content/uploads/2022/11/Digital_wallet_02_1920X960-01.jpg");
+mask-repeat: no-repeat;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+height: 100vh;
+}
+
+#itemsFromCart{
+
+/* width: 600px; */
+width: 25%;
+
+
+padding: 40px;
+background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+}
+
+.container {
+
+
+width: 30%;
+
+padding: 40px;
+background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+}
+
+h1 {
+margin-bottom: 30px;
+text-align: center;
+color: #444;
+}
+
+form {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.form-group {
+width: 48%;
+margin-bottom: 20px;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+color: #555;
+}
+
+input {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 3px;
+outline: none;
+}
+
+input:focus {
+border-color: #069;
+}
+
+button {
+display: block;
+margin-top: 30px;
+padding: 10px 20px;
+background-color: #069;
+color: #fff;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+background-color: #057;
+}
+#payment{
+width: 200px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+}
+rsButton {
+display: block;
+margin-top: 30px;
+padding: 10px 20px;
+background-color: #069;
+color: #fff;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+transition: background-color 0.2s ease-in-out;
+}
+
+rsButton:hover {
+background-color: #057;
+}
+
+/* table  */
+table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+
+td, th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+
+tr:nth-child(even) {
+background-color: #dddddd;
+}
+
+/* media queries  */
+
+@media all and (min-width: 768px) and (max-width: 1023px){
+     body{
+        display: flex;
+        flex-direction: column;
+     }
+     #itemsFromCart{
+         width: 70%;
+        
+       
+       
+     }
+     .container {
+         
+          width: 70%;
+
+     }
+}
+   /* <-------------------------small screen size ------------------------------------------------->  */
+   @media all and (min-width: 320px) and (max-width: 767px){
+body{
+    display: flex;
+    flex-direction: column;
+ }
+ #itemsFromCart{
+     width: 100%;
+     
+   
+   
+ }
+ .container {
+     
+      width: 100%;
+
+ }
+}
+    </style>
+  </head>
+  <body>
+    <div id="itemsFromCart">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>price</th>
+          </tr>
+
+        </thead>
+
+        <tbody id="tbody">
+            <!-- append  -->
+           
+            
+        </tbody>
+      </table>
+    </div>
+    <div class="container">
+      <h1>Payment Details</h1>
+      <form>
+        <div class="form-group">
+          <label for="card-number">Card Number:</label>
+          <input
+            type="text"
+            id="card-number"
+            name="card-number"
+            placeholder="Enter your card number"
+          />
+        </div>
+        <div class="form-group">
+          <label for="expiry-date">Expiry Date:</label>
+          <input
+            type="text"
+            id="expiry-date"
+            name="expiry-date"
+            placeholder="MM/YY"
+          />
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" name="cvv" placeholder="Enter your CVV" />
+        </div>
+        <div class="form-group">
+          <label for="name-on-card">Name on Card:</label>
+          <input
+            type="text"
+            id="name-on-card"
+            name="name-on-card"
+            placeholder="Enter the name on your card"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
+        </div>
+        <div class="form-group">
+          <label for="billing-address">Billing Address:</label>
+          <input
+            type="text"
+            id="billing-address"
+            name="billing-address"
+            placeholder="Enter your billing address"
+          />
+        </div>
+        <div id="payment">
+          <div>
+            <img
+              width="50px"
+              src="https://1000logos.net/wp-content/uploads/2021/03/Paytm_Logo.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              width="50px"
+              src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/phonepe-logo-icon.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              width="65px"
+              src="https://www.citypng.com/public/uploads/preview/transparent-hd-paypal-logo-21635273203amlzc6jbjx.png"
+              alt=""
+            />
+          </div>
+          <div><img src="" alt="" /></div>
+        </div>
+        <button id="rsButton"><h4>Total Amount ₹ <span>0</span> </h4></button>
+        <button id="payNow" type="submit">Pay Now</button>
+        
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+    let prodctsArray= JSON.parse(localStorage.getItem("buyproducts"));
+
+    let Total=0;
+
+
+function func(data){
+
+    let tbody= document.querySelector("#tbody");
+    tbody.style.backgrounColor="red"
+
+    
+
+    data.forEach((el, i)=>{
+        let row= document.createElement("tr");
+        let name= document.createElement("td");
+        let price= document.createElement("td");
+    
+        name.textContent= el.name;
+        price.textContent= el.price;
+    
+        row.append(name, price)
+        tbody.append(row)
+
+        Total+= el.price;
+    })
+    
+
+}
+
+func(prodctsArray)
+let form=document.querySelector("form")
+let rs= document.querySelector("span");
+rs.innerText= Total;
+
+
+let payBtn= document.querySelector("#payNow");
+payBtn.addEventListener("click", (e)=>{
+    e.preventDefault()
+    if(false){
+                alert("Any of the Given fields are empty")
+              }else{
+                let otp = document.createElement("input")
+                otp.style.marginTop="10px"
+                otp.placeholder = "4-Digit OTP ."
+                let orderplace = document.createElement("button")
+                orderplace.textContent = "PLACE ORDER"
+                
+                orderplace.addEventListener("click",function(event){
+                        event.preventDefault()
+
+                        if(otp.value=="1234"){
+                            alert("Order Placed Successfully")
+                            window.location.href="./index.html"
+                        }else{
+                            alert("Wrong OTP")
+                        }
+                    
+                })
+                form.append(otp, orderplace)
+            }
+
+})
+
+
+               
+
+</script>
