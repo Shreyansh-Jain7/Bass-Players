@@ -20,7 +20,7 @@
           <label for="password">Password</label>
           <input type="password" id="lpassword" name="password" required />
         </div>
-        <button type="submit">Login </button><br>
+        <button type="submit" id="sub">Login </button><br>
         <button id="createAcc"> Create New Account </button>
       </form>
       
@@ -39,8 +39,8 @@
     location.replace("./signup.html")
   })
 
-  const loginForm = document.querySelector("#login-form");
-  loginForm.addEventListener("submit", function (e) {
+  const loginForm = document.querySelector("#sub");
+  loginForm.addEventListener("click", function (e) {
     e.preventDefault();
 
     // Get the email and password input values
@@ -52,8 +52,7 @@
 
     for (let el of users_list) {
       if(email=="admin@gmail.com" && password== "admin"){
-        location.replace("./admin.html")
-        return
+        window.location.href="./admin.html";
       }
       
      else if (email == el.email && password == el.password) {
