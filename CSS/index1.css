@@ -112,7 +112,7 @@ position: fixed;
 background-color: white;
 z-index: 100;
 
-
+margin-top: -6px;
 }
 #left{
 width:40%;
@@ -173,7 +173,7 @@ display: flex;
 justify-content: space-between;
 position: fixed;
 border: 1px solid rgb(191, 187, 187);
-margin-top: 49.2px;
+margin-top: 43px;
 background-color: white;
 z-index: 100;
 
@@ -189,8 +189,9 @@ margin-left: 140px;
 #righta{
 margin-right: 80px;
 /* align-items: center; */
+display: flex;
 }
-#avtar{
+#avtar,#cart-icon{
     /* margin-right: 180px; */
     width: 50px;
 height: 50px;
@@ -262,7 +263,7 @@ margin-left: -20px; */
 /* -------------------------------------------------------------------------- */
 #lowerNavBar{
     background-color: aquamarine;
-    margin-top: -51px;
+    margin-top: -57px;
 }
 #subLowerNavBar{
     margin: auto;
