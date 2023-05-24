@@ -5,7 +5,8 @@ It is e-Commerce wbsite  held retailer which specializes in hunting, fishing, ca
 
 tech-stack = HTML ,CSS, Javascript 
 
-Here in  this project you can see 
+Here in  this project you can see <br> 
+
 . homepage
 . Log in/ signup page
 . product page 
