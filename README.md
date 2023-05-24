@@ -7,7 +7,9 @@ tech-stack = HTML ,CSS, Javascript
 
 Here in  this project you can see <br> 
 
-. homepage
-. Log in/ signup page
-. product page 
-. cart page
+. homepage<br> 
+. Log in/ signup page<br> 
+. product page <br> 
+. cart page<br> 
+
+<a href="./Bass (1).png"></a>
