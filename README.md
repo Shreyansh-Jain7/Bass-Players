@@ -3,7 +3,7 @@
 
 It is e-Commerce wbsite  held retailer which specializes in hunting, fishing, camping, and other related outdoor recreation merchandise. 
 
-tech-stack = HTML ,CSS, Javascript 
+tech-stack = HTML ,CSS, Javascript, Nodejs
 
 Here in  this project you can see <br> 
 
